@@ -63,11 +63,12 @@
   								<strong>выезд замерщика
   								</strong>
   							</h2>
-  							 <form class="form" action="#">
+                      
+  							 <form class="form" action="send.php" method="post">
   								<label for="#">Ваше имя</label>
-  								<input class="form-input" type="text">
+  								<input class="form-input" type="text" name="name">
   								<label for="#">Номер телефона</label>
-  								<input class="form-input" id="phone" type="text">
+  								<input class="form-input" id="phone" type="text" name="tel">
   								<button class="form-btn button" type="submit">Оставьте заявку</button>
   								<small>Подарок в день обращения</small>
   							</form>
@@ -708,15 +709,15 @@
          <h2 class="main-form-header">
           Оставьте контактные<br> данные для связи
          </h2>
-         <form class="form" action="#">
+         <form class="form" action="send.php" method="post">
           <label for="#">Ваше имя</label>
-          <input class="form-input" type="text">
+          <input class="form-input" type="text" name="name">
           <label for="#">Ваш телефон</label>
-          <input class="form-input" type="text">
+          <input class="form-input" type="tel" name="tel">
           <label for="#">Ваш E-mail</label>
-          <input class="form-input" type="text">
+          <input class="form-input" type="email" name="email">
           <label for="#">Сообщение</label>
-          <textarea class="form-input" rows="5">
+          <textarea class="form-input" rows="5" type="send" name="send">
            
           </textarea>
           <button class="form-btn button contacts-btn" type="submit">Записаться на просмотр</button>
@@ -844,5 +845,4 @@
     </script>
   </body>
 </html>
-
 
