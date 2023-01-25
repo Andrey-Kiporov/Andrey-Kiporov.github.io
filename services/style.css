@@ -1,0 +1,83 @@
+a, li, ul, p{
+	text-decoration: none;
+	list-style: none;
+	margin: 0;
+}
+h1{
+		margin: 0;
+}
+h1 a{
+	font-weight: 600;
+	color: #a8a8a8;
+}
+.header{
+	background-color: #a8a8a8;
+	height: 93px;
+	width: 100%;
+}
+.logo{
+	background-color: #000;
+	text-align: center;
+	width: 100%;
+}
+
+.main-menu{
+	float: left;
+	width: 50%;
+	height: auto;
+	margin-bottom: 10px;
+}
+.main-menu a{
+	float: left;
+	margin: 10px;
+	color: #fff;
+	font-weight: 600;
+}
+.create-new{
+	background-color: #000;
+	color: #a8a8a8;
+	border: none;
+	float: right;
+	height: 44px;
+	padding: 8px;
+}
+.create-new:hover{
+	background-color: #2a2a2a;
+	color: #fff;
+	transition: 1s;
+}
+table{
+	width: 100%;
+	margin-bottom: 10px;
+}
+td{
+	border: solid 1px black;
+}
+tr{
+	text-align: center;
+	vertical-align: middle;
+}
+.main-title{
+	padding: 30px;
+	margin-bottom: 10px;
+	border-bottom: 3px solid black;
+}
+.main-form{
+	width: 50%;
+}
+.main-form p{
+	float: left;
+}
+.block-form{
+	height: 40px;
+	margin: 10px;
+	padding: 5px;
+}
+.form-create{
+	width: 200px;
+	width: 100%;
+	border: solid 1px #a8a8a8;
+}
+.savevisit{
+	margin-top: 50px;
+	margin-left: 15px;
