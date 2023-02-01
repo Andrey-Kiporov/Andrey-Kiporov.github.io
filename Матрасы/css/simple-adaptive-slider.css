@@ -1,0 +1,118 @@
+/**
+  * SimpleAdaptiveSlider by itchief (https://github.com/itchief/ui-components/tree/master/simple-adaptive-slider)
+  * Copyright 2020 - 2022 Alexander Maltsev
+  * Licensed under MIT (https://github.com/itchief/ui-components/blob/master/LICENSE)
+  */
+
+/* стили для корневого элемента слайдера */
+.itcss {
+  position: relative;
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* стили для wrapper */
+.itcss__wrapper {
+  position: relative;
+  overflow: hidden;
+  background-color: #eee;
+}
+
+/* стили для элемента, в котором непосредственно расположены элементы (слайды) */
+.itcss__items {
+  display: flex;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+/* стили для элементов */
+.itcss__item {
+  position: relative;
+  flex: 0 0 100%;
+  max-width: 100%;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+
+/* кнопки Prev и Next */
+.itcss__btn {
+  position: absolute;
+  top: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background: none;
+  border: 2px solid #cc9966;
+}
+
+.itcss__btn_hide {
+  display: none;
+}
+
+.itcss__btn_prev {
+  left: 15px;
+}
+
+.itcss__btn_next {
+  right: 15px;
+}
+
+.itcss__btn::before {
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.itcss__btn_prev::before {
+  background: url("..//strelka.png") left no-repeat;
+}
+
+.itcss__btn_next::before {
+  background: url("..//strelkal.png") right no-repeat;
+}
+
+/* Индикаторы */
+.itcss__indicators {
+  position: absolute;
+  right: 0;
+  bottom: 23px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  list-style: none;
+  user-select: none;
+}
+
+.itcss__indicator {
+  flex: 0 1 auto;
+  width: 10px;
+  height: 10px;
+  margin-right: 3px;
+  margin-left: 3px;
+  background-color: rgb(255 255 255 / 50%);
+  background-clip: padding-box;
+  border: 1px solid #cc9966;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.itcss__indicator_active {
+  background-color: #cc9966;
+
+}
+
+/* класс для отключения transition */
+.transition-none {
+  transition: none;
+}

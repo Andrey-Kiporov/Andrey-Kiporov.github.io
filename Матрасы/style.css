@@ -1,0 +1,188 @@
+a,li{
+	list-style: none;
+	text-decoration: none;
+}
+h1{
+	font-size: 24pt;
+}
+p{
+	font-size: 12pt;
+}
+header{
+	width: 100%;
+	background: linear-gradient(to bottom, rgb(204, 153, 102) 70%, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0) 100%, rgb(4, 120, 21) 100%);
+	margin-bottom: 20px;
+}
+.top-nav{
+		color: #fff;
+		height: 6rem;
+		border-bottom: #fff 1px solid;
+}
+.logo{
+	margin-top: 10px;
+	float: left;
+	font-size: 36pt;
+	line-height: 24pt;
+}
+.right-nav{
+	float: right;
+	margin-top: 25px;
+}
+.icon{
+	line-height: 12pt;
+	font-size: 12pt;
+	position: relative;
+ display: inline-block;
+ vertical-align: middle;
+ margin: 0 0 0 17px;
+ width: 254px;
+ padding-left: 10px;
+	border-left: 1px solid rgba(250, 250, 250, 0.5);
+}
+.icon span{
+	font-size: 16pt;
+	font-weight: bold;
+}
+.icon::before{
+ position: absolute;
+ top: 50%;
+ left: -25px;
+ content: '';
+ height: 30px;
+ width: 15px;
+ margin-top: -15px;
+}
+.tel::before{
+		background: url(Телефон.svg) center no-repeat;
+}
+.time::before{
+		background: url(Часы.svg) center no-repeat;
+}
+.main-nav{
+	width: 100%;
+	height: 40px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.lp-nav{
+	text-align: center;
+}
+.lp-nav li{
+	margin: 15px;
+	display: inline-block;
+ 	vertical-align: top;
+}
+.lp-nav a{
+	color: #fff;
+}
+.lp-nav>li:hover{
+	opacity: 0.8;
+	border-bottom: 3px solid #fff;
+	transition: 0.2s;
+}
+
+    /* дополнительные стили для этого примера */
+.itcss__items {
+ height: 580px;
+}
+
+.one-page{
+	background: url("1p.jpg") center no-repeat;
+}
+.second-page{
+	background: url("2p.jpg") center no-repeat;
+}
+.third-page{
+	background: url("3p.jpg") center no-repeat;
+}
+.fours-page{
+	background: url("4p.jpg") center no-repeat;
+}
+.price-page{
+	height: 100%;
+}
+.main-title-price{
+	line-height: 2px;
+	color: #fff;
+	display: flex;
+}
+.title-price{
+	position: absolute;
+    top: 40%;
+    left: 20px;
+}
+.main-button{
+	display:block;
+	margin: 0 auto;
+	line-height: 10px;
+	background-color: #663333;
+	border: none;
+	color: #cc9966;
+	width: 15rem;
+	height: 2rem;
+	cursor: pointer;
+}
+.main-button:hover{
+	background-color: #993333;
+	color: #996633;
+	transition: 0.5s;
+}
+.botom-btn{
+	margin-top: 400px;
+}
+.itcss__btn:hover{
+	opacity: 0.5;
+}
+.prew{
+	padding: 0;
+}
+.lomrew> img{
+	height: 580px;
+	width: 100%;
+	background-size: cover;
+}
+.slider-shop{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.card{
+	padding: 10px;
+}
+.round{
+	display: flex;
+	width: 200px;
+	height: 200px;
+	background-color: #669999;
+	border-radius: 50%;
+	color: #fff;
+	justify-content: center;
+	align-items: center;
+}
+.round>p{
+	font-size: 60pt;
+}
+.rofl{
+	display: flex;
+	justify-content: space-around;
+}
+.rofl>img{
+	max-height: 300px;
+	max-width: 300px;
+}
+.card-body{
+	color: #666;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.price{
+	display: inline-block;
+	color: #cc9966;
+	width: 150px;
+	padding-bottom: 5px;
+	border-bottom: 3px #cc9966 solid;
+}
+footer{
+	background-color: #666666;
+	padding: 30px;
+}
